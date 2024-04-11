@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class=" " style="--real-height: 167px; --inner-height: 894px; --outer-height: 911px; scroll-behavior: smooth;">
+
+<head>
+  <meta charset="utf-8">
+
+  <head>
+    <title>Maker Space</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Asset/styles/main.css">
+    <link rel="stylesheet" href="style.css" <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" class="back">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid navdiv">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Ready,Launch!</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">HOME</a></li>
+          <li>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+              <li><a href="news.html">News/Blog</a></li>
+              <li><a href="sponsor.html">Sponsorships</a></li>
+          </li>
+        </ul>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="submission.html">Project Submission</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+            <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="project-tech.html">Tech</a></li>
+            <li><a href="project-food.html">Food</a></li>
+            <li><a href="project-art.html">Art</a></li>
+            <li><a href="project-photo.html">Photography</a></li>
+            <li><a href="project-music.html">Music</a></li>
+            <li><a href="project-game.html">Games</a></li>
+            <li><a href="project-book.html">Books</a></li>
+          </ul>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="citation.html">Citation</a></li>
+        </li>
+
+
+        <li>
+          <div class="btn-group">
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+              Login <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+              <div class="col-sm-12">
+                <div class="col-sm-12">
+                  Login
+                </div>
+                <div class="col-sm-12">
+                  <input type="text" placeholder="Uname or Email" onclick="return false;" class="form-control input-sm"
+                    id="inputError" />
+                </div>
+                <br />
+                <div class="col-sm-12">
+                  <input type="password" placeholder="Password" class="form-control input-sm" name="password"
+                    id="Password1" />
+                </div>
+                <div class="col-sm-12">
+                  <button type="submit" class="btn btn-success btn-sm" onclick="Login()">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        </ul>
+      </div>
+  </nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel"
+    style="background-color:cyan;background-image: linear-gradient(to right, blue , Purple)">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="./Asset/images/launch.png" alt="Ready Launch" width="1200" height="600">
+        <div class="carousel-caption">
+          <h1>Makerspace</h1>
+
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./Asset/images/name.png" alt="View projects" width="1200" height="600">
+        <div class="carousel-caption">
+          <h1>Makerspace</h1>
+
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./Asset/images/boy.png" alt="Become a member" width="1200" height="600">
+        <div class="carousel-caption">
+          <h1>Makerspace</h1>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="col-lg-6 col-sm-6 col-md-12 col-xs-12">
+    <h1 class="Overview">Overview</h1>
+    <h2 class="Words">A maker space is a collaborative workspace. Everyone can upload their ideas into the projects
+      section. They shall upload to the specific category they are looking for. For example, if you created a nice 3d
+      printer, the person shall upload the project in the tech section. A makerspace should include competitions to see
+      which project stands out. The purpose is to get new projects from users who work hard to create those projects.
+      The competitions will allow us to see who's ideas stand out the most. A user could also be a member which allows
+      them to access more projects and they create their own projects which goes directly to the creators.</h2>
+  </div>
+  <div class="col-lg-6 col-sm-6 col-md-12 col col-xs-12">
+    <img src="./Asset/images/why.png" width="800" height="450" style="padding-top: 30px;">
+  </div>
+
+  <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+    <h2 class="Question"> Frequent Questions for Makerspace</h2>
+
+
+    <button class="accordion"
+      style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Why
+      can't I access more than 8 projects?</button>
+    <div class="panel">
+      <p style="color: black;">Well, you can't access more projects, because you haven't became a member! </p>
+    </div>
+
+
+    <button class="accordion"
+      style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">When
+      will I receive my approval to become a memeber?</button>
+    <div class="panel">
+      <p style="color: black;">You will receive a approval or denial in about a week!</p>
+    </div>
+
+
+    <button class="accordion"
+      style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">How
+      long does the member subscription last?</button>
+    <div class="panel">
+      <p style="color: black;">You can stay a member for a month!</p>
+    </div>
+
+    <button class="accordion"
+      style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Schedule
+      is confusing!</button>
+    <div class="panel">
+      <p style="color: black;">Sorry, there will be many competitions during the month and results of those competitions
+        will come out during some other competitions.</p>
+    </div>
+
+    <br>
+    <p id="Question_4" style="font-size:25px;"><strong></strong></strong></p>
+    <br><br>
+  </div>
+    
+      
+        <div class="row">
+          <div class="col-md-3 col-sm-12 col-lg-3" style="margin-left: 40rem; background-color: #B19CD9;">
+            <div >
+              <h2 class="sponsor">Best Project From March!</h2>
+                <div class="card cards">
+                    <div class="card-image">
+                        <img class="img-responsive" src="./Asset/images/blub.avif">
+                    </div><!-- card image -->
+
+                    <div class="card-content">
+                    </div><!-- card content -->
+                    <div class="card-reveal">
+                        <span class="card-title">The Blub was the project of March!</span> <button type="button" class="close"
+                            data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                    </div><!-- card reveal -->
+                </div>
+            </div>
+          </div>
+          <div class=" col-md-3 col-sm-12 col-lg-3" style="margin-left: 20rem; background-color: #B19CD9;">
+          <div >
+            <h2 class="sponsor">Best Member From March!</h2>
+              <div class="card cards">
+                  <div class="card-image">
+                      <img  src="./Asset/images/Spot.png" class="img-responsive">
+                  </div><!-- card image -->
+
+                  <div class="card-content">
+                     
+                  </div><!-- card content -->
+                  <div class="card-reveal">
+                      <span class="card-title">User SS was the member of March!</span> <button type="button" class="close"
+                          data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                     
+                  </div><!-- card reveal -->
+              </div>
+          </div>
+        </div>
+  </div>  
+  <br><br><br><br>
+  <div
+    style="position: fixed; left: 0; bottom: 0; width: 100%; background-color:blanchedalmond; color: black; text-align: center;">
+    <p
+      style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      Makerspace | Ready Launch!</p>
+  </div>
+  <script>
+    $(document).ready(function () {
+      // Initialize Tooltip
+      $('[data-toggle="tooltip"]').tooltip();
+
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    })
+    function Login() {
+      alert("You are now logged in");
+    }
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+</body>
+</body>
+
+</html>

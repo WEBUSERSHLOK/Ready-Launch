@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Asset/styles/main.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    p {
+  height: 80px;
+}
+</style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" class="back">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid navdiv">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Ready,Launch!</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                            <li><a href="news.html">News/Blog</a></li>
+                            <li><a href="sponsor.html">Sponsorships</a></li>
+                    </li>
+                </ul>
+                <li><a href="joinus.html">Join Us</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="submission.html">Project Submission</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="project-tech.html">Tech</a></li>
+                        <li><a href="project-food.html">Food</a></li>
+                        <li><a href="project-art.html">Art</a></li>
+                        <li><a href="project-photo.html">Photography</a></li>
+                        <li><a href="project-music.html">Music</a></li>
+                        <li><a href="project-game.html">Games</a></li>
+                        <li><a href="project-book.html">Books</a></li>
+                    </ul>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="citation.html">Citation</a></li>
+                </li>
+
+
+                <li>
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                            Login <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="col-sm-12">
+                                <div class="col-sm-12">
+                                    Login
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="text" placeholder="Uname or Email" onclick="return false;"
+                                        class="form-control input-sm" id="inputError" />
+                                </div>
+                                <br />
+                                <div class="col-sm-12">
+                                    <input type="password" placeholder="Password" class="form-control input-sm"
+                                        name="password" id="Password1" />
+                                </div>
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn btn-success btn-sm" onclick="Login()">Sign
+                                        in</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                </ul>
+            </div>
+    </nav>
+
+    <header>
+        <div class="nav">
+
+          
+
+            <div class="box">
+                <div class="cart-count">0</div>
+                <div class="cart-count1">View Your Cart</div>
+                <i name="cart" id="cart-icon" class="fa-regular fa-cart-shopping add-cart"><img
+                        src="./Asset/images/cart.png" style="width: 20px; "></i>
+
+            </div>
+
+            <div class="cart">
+                <div class="cart-title">Claimed Projects</div>
+                <div class="cart-content">
+
+                </div>
+
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">USD.0</div>
+                </div>
+
+                <button class="btn-buy" onclick="Submit()">Submit</button>
+                <i name="close" id="cart-close" class="fa fa-ellipsis-v">X</i>
+
+
+            </div>
+        </div>
+    </header>
+    <div class="maincart">
+        <h2 class="title" style="padding-left: 20px;">Discover the Best Projects!</h2>
+        <div class="shop-content">
+
+
+            <div class="food-box" style="background-color: #FFCC00;">
+                <div class="pic">
+                    <img src="./Asset/images/imag.png" class="food-img">
+                </div>
+                <h2 class="food-title">Clean Camera</h2>
+                <p style="color: black;">This camera is special because it can't get dirty</p>
+                <span class="food-price" style="color: black;">USD.0</span>
+                <i name="cart" class="fa fa-ellipsis-v add-cart">Claim</i>
+
+            </div>
+
+
+            <div class="food-box" style="background-color: #FFCC00;">
+                <div class="pic"><img src="./Asset/images/downloads.jpg" class="food-img"></div>
+                <h2 class="food-title">fast camera</h2>
+                <p style="color: black;">This camera can take pictures faster than other cameras</p>
+                <span class="food-price" style="color: black;">USD.0</span>
+                <i name="cart" class="fa fa-ellipsis-v add-cart">Claim</i>
+            </div>
+
+            <div class="food-box" style="background-color: #FFCC00;">
+                <div class="pic"><img src="./Asset/images/huh.jpg" class="food-img"></div>
+                <h2 class="food-title">Kids Camera</h2>
+                <p style="color: black;">This camera is built for kids because it is easy to use</p>
+                <span class="food-price" style="color: black;">USD.0</span>
+                <i name="cart" class="fa fa-ellipsis-v add-cart">Claim</i>
+            </div>
+
+            <div class="food-box" style="background-color: #FFCC00;">
+                <div class="pic"><img src="./Asset/images/hue.jpg" class="food-img"></div>
+                <h2 class="food-title">precise camera</h2>
+                <p style="color: black;">This camera is special because it can zoom in from great distances</p>
+                <span class="food-price" style="color: black;">USD.0</span>
+                <i name="cart" class="fa fa-ellipsis-v add-cart">Claim</i>
+            </div>
+
+            <div class="food-box" style="background-color: #FFCC00;">
+                <div class="pic"><img src="./Asset/images/cam.avif" class="food-img"></div>
+                <h2 class="food-title">Better camera</h2>
+                <p style="color: black;">This camera takes ultra quality pictures.</p>
+                <span class="food-price" style="color: black;">USD.0</span>
+                <i name="cart" class="fa fa-ellipsis-v add-cart">Claim</i>
+            </div>
+
+            <div class="food-box" style="background-color: #FFCC00;">
+                <div class="pic"><img src="./Asset/images/wood.avif" class="food-img"></div>
+                <h2 class="food-title">Woods Picture</h2>
+                <p style="color: black;">I took a nice picture in the woods.</p>
+                <span class="food-price" style="color: black;">USD.0</span>
+                <i name="cart" class="fa fa-ellipsis-v add-cart">Claim</i>
+            </div>
+
+
+            <div class="food-box" style="background-color: #FFCC00;">
+                <div class="pic"><img src="./Asset/images/sunse.avif" class="food-img"></div>
+                <h2 class="food-title">Sunset Photo</h2>
+                <p style="color: black;">I was at the beach and took a picture.</p>
+                <span class="food-price" style="color: black;">USD.0</span>
+                <i name="cart" class="fa fa-ellipsis-v add-cart">Claim</i>
+            </div>
+
+
+            <div class="food-box" style="background-color: #FFCC00;">
+                <div class="pic"><img src="./Asset/images/water.avif" class="food-img"></div>
+                <h2 class="food-title">Ocean pic</h2>
+                <p style="color: black;">Robot that can be a toy or even a thing to put on your shelf.</p>
+                <span class="food-price" style="color: black;">USD.0</span>
+                <i name="cart" class="fa fa-ellipsis-v add-cart">Claim</i>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <script src="cart.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+        function Login() {
+            alert("You are now logged in");
+        }
+        function Submit() {
+            alert("You have to become a member to claim!");
+        }
+
+
+    </script>
+</body>
+
+</html>

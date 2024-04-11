@@ -14,10 +14,8 @@ header{
  
 }
 .maincart{
-    position: fixed;
-    top: 80px;
-    left: 0;
-    width: 100%;
+ padding-top: 8rem;
+      width: 100%;
 }
 
 .nav{
